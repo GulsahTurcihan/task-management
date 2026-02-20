@@ -44,7 +44,10 @@ export default function TaskEditPage() {
     setTimeout(() => {
       router.replace("/");
     }, 700);
-  }
+  } 
+
+
+
 
   return (
     <main className="min-h-screen bg-slate-50 py-10">
@@ -59,7 +62,7 @@ export default function TaskEditPage() {
           <div className="mt-4 space-y-2 text-sm text-slate-500">
             <div>
               <span className="font-medium text-slate-800">TaskID:</span>{" "}
-              {task.id}
+              {task._id}
             </div>
           </div>
           <form onSubmit={onSave} className="mt-5 space-y-4">
